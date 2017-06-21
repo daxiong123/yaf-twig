@@ -1,0 +1,11 @@
+language: php
+php:
+  - 7.0
+  - 7.1
+before_install: echo "yaf.use_namespace=On" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+install:
+  - php -m
+  - pecl install yaf
+  - composer update
+script:
+  - vendor/bin/phpunit
