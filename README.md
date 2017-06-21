@@ -48,6 +48,9 @@ Add to `Bootstrap.php`
 
 ```php
 
+use Yaf\Application;
+use Yaf\Dispatcher;
+
 public function _initView(Dispatcher $dispatcher)
 {
     $conf = Application::app()->getConfig();
