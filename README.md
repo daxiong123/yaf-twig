@@ -21,7 +21,7 @@ For latest commit version:
 
 ### Requirements
 
-Validator works with 5.6, 7.0, 7.1.
+Validator works with 7.0, 7.1.
 
 ### Quick Start and Examples
 
