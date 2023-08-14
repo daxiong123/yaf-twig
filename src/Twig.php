@@ -109,7 +109,7 @@ class Twig implements View_Interface
     /**
      * @return array
      */
-    public function getScriptPath(): array
+    public function getScriptPath($request = null): array
     {
         return $this->loader->getPaths();
     }
