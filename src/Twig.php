@@ -2,6 +2,8 @@
 
 namespace Aichong;
 
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 use \Yaf\View_Interface;
 
 /**
@@ -33,8 +35,8 @@ class Twig implements View_Interface
      */
     public function __construct(string $templateDir, array $options = [])
     {
-        $this->loader = new \Twig_Loader_Filesystem($templateDir);
-        $this->twig = new \Twig_Environment($this->loader, $options);
+        $this->loader = new FilesystemLoader($templateDir);
+        $this->twig = new Environment($this->loader, $options);
     }
 
     /**
